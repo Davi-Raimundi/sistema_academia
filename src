@@ -45,7 +45,7 @@ create table Pagamentos (
 id_pagamento int auto_increment primary key,
 data_pagamento datetime,
 valor_pago decimal(10, 2),
-forma_pagamento varchar(40)
+forma_pagamento enum("Pix","Crédito","Dinheiro","Débito")
 );
 
 
